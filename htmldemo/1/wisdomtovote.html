@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+<head>
+
+    <title>一智千金</title>
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <link type="text/css" rel="stylesheet" href="css/common.css">
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+
+</head>
+<body>
+<div class="wisdom user vote">
+    <header class="header">
+        <div class="header-inner">
+            <img class="logo" src="images/04-logo.png" alt="">
+            <img class="header-bg" src="images/04-02bj.jpg" alt="">
+            <dl>
+                <dd>
+                    <div class="face-box"><span class="face"><i class="num">1</i><span class="face-inner"><img src="images/sy-cy.png"></span></span><span class="name">昵称</span></div>
+                    <div><img class="award" src="images/04-jp.png"></div>
+                </dd>
+            </dl>
+
+
+        </div>
+    </header>
+    <section class="body">
+            <div class="body-panel ">
+                <section class=" "><span class="text-show">移动互联应用开发也越来越受到人们的重视<img class="pin" src="images/pin.png"></span></section>
+                <section>
+                    <ul class="flexbox sorting ">
+                        <li class="flexitem"><img src="images/04-02icon.jpg"><span>人气：2334</span></li>
+                        <li class="flexitem"><img src="images/04-02icon2.jpg"><span>排名：No.34</span></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <ul class="flexbox btns ">
+                        <li class="flexitem"><img class="vote-btn" src="images/04-04ann1.png"></li>
+                        <li class="flexitem"><a href="wisdomtoshow.html"><img src="images/04-04ann2.png"></a></li>
+                    </ul>
+                </section>
+
+            </div>
+        <div class="action-rule"><a >活动规则〉〉</a></div>
+
+    </section>
+
+</div>
+
+<div class="dialog-box" id="vote-success">
+    <div class="dialog-body p90">
+        <div class="dialog-body-inner">
+            <a class="close-btn"  alt="关闭按钮"></a>
+            <img src="images/04-06tanchu.png">
+        </div>
+
+    </div>
+</div>
+
+
+<div class="dialog-box" id="award-setting">
+    <div class="dialog-body">
+        <div class="dialog-body-inner">
+            <a class="close-btn" alt="关闭按钮"></a>
+            <img src="images/04-08_01.png">
+            <img src="images/04-08_03.jpg">
+            <img src="images/04-08_06.jpg">
+            <ul class="flexbox awards">
+                <li  class="flexitem"><img src="images/04-08jp.jpg"></li>
+                <li  class="flexitem"><img src="images/04-08jp2.jpg"></li>
+                <li  class="flexitem"><img src="images/04-08jp3.jpg"></li>
+            </ul>
+            <img src="images/04-08_12.jpg">
+            <img src="images/04-08_15.jpg">
+            <img src="images/04-08_18.jpg">
+            <img src="images/04-08_20.png">
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var dialog =  $("#vote-success");
+    $(".vote-btn").click(function(){
+        dialog.css({ visibility: "visible"});
+    });
+    $(".close-btn").click(function(){
+        dialog.css({ visibility: "hidden"});
+    });
+
+    var dialog1 =    $("#award-setting");
+    $(".award").click(function(){
+        dialog1.css({ visibility: "visible"});
+    })
+    $(".close-btn",dialog1).click(function(){
+        dialog1.css({ visibility: "hidden"});
+    });
+</script>
+</body>
+</html>

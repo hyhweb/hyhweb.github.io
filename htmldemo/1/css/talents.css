@@ -1,0 +1,38 @@
+html,
+body {
+  background-color: #71ccfb;
+}
+.header .header-inner img {
+  width: 100%;
+  position: relative;
+  margin-top: 11%;
+}
+.header .talents-logo {
+  width: 20%;
+  position: absolute;
+  left: 5%;
+  top: 2%;
+}
+.talents-show {
+  text-align: center;
+}
+.talents-show img {
+  width: 90%;
+}
+.talents-show a img:first-child {
+  display: none;
+}
+.talents-show a:hover img:first-child {
+  display: block;
+}
+.talents-show a:hover img:last-child {
+  display: none;
+}
+.footer-inner {
+  text-align: center;
+}
+.footer-inner img {
+  width: 50%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
