@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title></title>
+<link type="text/css" rel="stylesheet" href="../themes/common.css" />
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript" src="../core/base.js"></script>
+<script type="text/javascript" src="../plugins/button.js"></script>
+<script type="text/javascript" src="../plugins/btn.js"></script>
+<script type="text/javascript" src="../plugins/textbox.js"></script>
+<script type="text/javascript" src="../plugins/radio.js"></script>
+<script type="text/javascript" src="../plugins/checkbox.js"></script>
+<script type="text/javascript" src="../plugins/select.js"></script>
+<script type="text/javascript" src="../plugins/combobox.js"></script>
+<script type="text/javascript" src="../plugins/toolbar.js"></script>
+<script type="text/javascript" src="../plugins/hongtab.js"></script>
+<script type="text/javascript" src="../plugins/accordion.js"></script>
+<script type="text/javascript" src="../plugins/dialog.js"></script>
+<script type="text/javascript" src="../plugins/page.js"></script>
+<script type="text/javascript" src="../plugins/menubar.js"></script>
+<script type="text/javascript" src="../plugins/menu.js"></script>
+<script type="text/javascript" src="../plugins/tip.js"></script>
+<script type="text/javascript" src="../plugins/drag.js"></script>
+<script type="text/javascript" src="../plugins/resizable.js"></script>
+<script type="text/javascript" src="../plugins/form.js"></script>
+<script type="text/javascript" src="../plugins/grid.js"></script>
+<script type="text/javascript">
+        $(function ()
+        {
+            var jsonobj = {};
+            jsonobj.datagridheader="员工资料";
+            jsonobj.Rows = [
+                { id: 3, name: "林三", sex: "男", birthday: "1989/01/12" },
+                { id: 43, name: "陈丽", sex: "女", birthday: "1989/01/12" },
+                { id: 33, name: "啊三", sex: "男", birthday: "1981/12/12" },
+                { id: 34, name: "表三", sex: "男", birthday: "1983/01/12" },
+                { id: 43, name: "陈丽", sex: "女", birthday: "1989/01/12" },
+                { id: 10, name: "成三", sex: "男", birthday: "1989/11/13" },
+                { id: 34, name: "都三", sex: "女", birthday: "1989/04/2" }
+
+            ];
+            $(".grid").grid({
+                columns: [
+                    { display: '排序', name: 'id', width: 200 },
+                    { display: '名字', name: 'name', width: 200 },
+                    { display: '性别', name: 'sex', width: 200 },
+                    { display: '生日', name: 'birthday', width: 200 }
+                ], width: 600,
+                data: jsonobj
+            });
+        });
+    </script>
+</head>
+<body>
+<div  class="grid"></div>
+</div>
+</body>
+</html>

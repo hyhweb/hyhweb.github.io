@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+        .zoom{ overflow: hidden; box-shadow:6px 6px 8px #ccc }
+
+    </style>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="lazy.js"></script>
+    <script type="text/javascript">
+        $(function(){
+           // $.fn.lazy();
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+
+
+    setTimeout("tosrc()",2000);
+
+    function tosrc(){
+
+        imgs=document.getElementsByTagName("img");
+
+        imgsnum=imgs.length;
+
+        for(imgi=0;imgi<imgsnum;imgi++){
+
+          //  if((typeof(imgs[imgi].src)=="undefined"||imgs[imgi].src==" ")&&imgs[imgi].getAttribute("thissrc")!=null)
+
+            imgs[imgi].src=imgs[imgi].getAttribute("thissrc");
+        }
+    };
+    </script>
+
+
+
+
+
+
+
+</head>
+<body>
+<img src="e" thissrc="img/1.jpg" />
+<img src="e" thissrc="img/2.jpg" />
+<img src="e" thissrc="img/3.jpg" />
+<script type="text/javascript">
+    function JSandCSSRegistration() {
+
+        document.createStyleSheet("style.css");
+
+        var head = document.getElementsByTagName('header').item(0);
+        var script = document.createElement('script');
+        script.src = "common.js";
+        script.type = "text/javascript";
+        head.appendChild(script);
+        alert("dd");
+    }
+    JSandCSSRegistration();
+
+
+
+
+</script>
+</body>
+
+
+</html>

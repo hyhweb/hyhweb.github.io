@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link type="text/css" rel="stylesheet" href="../themes/common.css" />
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript" src="../plugins/autotree.js"></script>
+<style type="text/css">
+    .nodeline,.nodeicon{ display: inline-block; width: 30px; height: 30px;}
+
+</style>
+<script type="text/javascript">
+$(function(){
+    $(function ()
+    {
+        $(".tree1").autoTree({
+            data: [
+                { text: '报表方案分组',icon:'nodeicon', children: [
+                    { text: '报表方案',icon:'nodeicon' },
+                    { text: '报表查看',icon:'nodeicon' },
+                    { text: '各城市客户分析',icon:'nodeicon', children: [
+                        { text: '数据共享',icon:'nodeicon', children: [
+                            { text: '数据共享22',icon:'nodeicon',children: [
+                                { text: '数据共享44',icon:'nodeicon' },
+                                { text: '数据分析55',icon:'nodeicon' }] },
+                            { text: '数据分析33',icon:'nodeicon' }]
+                        },
+                        { text: '数据分析',icon:'nodeicon' }
+                    ]
+                    },
+                    { text: '报表数据源',icon:'nodeicon' }
+                ]
+                },
+                { text: '报表数据源',icon:'nodeicon', children: [
+                    { text: '报表方案',icon:'nodeicon'},
+                    { text: '报表查看',icon:'nodeicon' },
+                    { text: '各城市客户分析',icon:'nodeicon', children: [
+                        { text: '数据共享',icon:'nodeicon' },
+                        { text: '数据分析',icon:'nodeicon'}
+                    ]
+                    },
+                    { text: '报表数据源',icon:'nodeicon' }
+                ]
+                }
+            ]
+        });
+    });
+
+
+});
+ 
+</script>
+
+<title>text</title>
+</head>
+
+<body>
+<div class="tree1"></div>
+</body>
+</html>

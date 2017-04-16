@@ -1,0 +1,5 @@
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Trade\SQLHelper\bin\Debug\SQLHelper.dll
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Trade\SQLHelper\bin\Debug\SQLHelper.pdb
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Trade\SQLHelper\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Trade\SQLHelper\obj\Debug\SQLHelper.dll
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Trade\SQLHelper\obj\Debug\SQLHelper.pdb

@@ -1,0 +1,7 @@
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Trade\IDAL\bin\Debug\IDAL.dll
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Trade\IDAL\bin\Debug\IDAL.pdb
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Trade\IDAL\bin\Debug\Model.dll
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Trade\IDAL\bin\Debug\Model.pdb
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Trade\IDAL\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Trade\IDAL\obj\Debug\IDAL.dll
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Trade\IDAL\obj\Debug\IDAL.pdb

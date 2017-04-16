@@ -1,0 +1,15 @@
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Trade\Trade\bin\Trade.dll
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Trade\Trade\bin\Trade.pdb
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Trade\Trade\bin\BLL.dll
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Trade\Trade\bin\IDAL.dll
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Trade\Trade\bin\Model.dll
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Trade\Trade\bin\SQLHelper.dll
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Trade\Trade\bin\SQLServer.dll
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Trade\Trade\bin\SQLHelper.pdb
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Trade\Trade\bin\BLL.pdb
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Trade\Trade\bin\SQLServer.pdb
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Trade\Trade\bin\Model.pdb
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Trade\Trade\bin\IDAL.pdb
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Trade\Trade\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Trade\Trade\obj\Debug\Trade.dll
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Trade\Trade\obj\Debug\Trade.pdb

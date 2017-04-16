@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="Trade.Admin" %>
+<%@ Register Src="~/Controls/AdminNav.ascx" TagName="AdminNav" TagPrefix="Trade" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>无标题页</title>
+    <link href="App_Themes/theme/main.css" type="text/css" rel="Stylesheet" />  
+     
+    <link href="Edition/themes/default/default.css" />
+    <script  src="Javascript/jquery-1.js"></script>
+    <script charset="utf-8" src="Edition/kindeditor-min.js"></script>
+	<script charset="utf-8" src="Edition/lang/zh_CN.js"></script>
+	 
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="wrap">
+    <div class="nav-side">
+    <Trade:AdminNav ID="adminnav" runat="server" />
+    </div>
+    <div class="content">
+        <asp:ContentPlaceHolder ID="TradeContentPlaceHolder" runat="server">
+           
+        </asp:ContentPlaceHolder>
+    </div>
+    </div>
+    </form>
+</body>
+</html>

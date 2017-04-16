@@ -1,0 +1,610 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F51B3C8F-02A3-4053-A215-A569F8A54226}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Trade</RootNamespace>
+    <AssemblyName>Trade</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\theme\main.css" />
+    <Content Include="Controls\CatagoryControl.ascx" />
+    <Content Include="Controls\LoginControl.ascx" />
+    <Content Include="Controls\MenuControl.ascx" />
+    <Content Include="Controls\MessageControl.ascx" />
+    <Content Include="Controls\MessageSubmitControl.ascx" />
+    <Content Include="Controls\NewsControl.ascx" />
+    <Content Include="Controls\ProductControl.ascx" />
+    <Content Include="Default22.aspx" />
+    <Content Include="Ord1.aspx" />
+    <Content Include="ProductImgs\1.jpg" />
+    <Content Include="ProductImgs\2.jpg" />
+    <Content Include="test.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCatagory.aspx.cs">
+      <DependentUpon>AdminCatagory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCatagory.aspx.designer.cs">
+      <DependentUpon>AdminCatagory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCompany.aspx.cs">
+      <DependentUpon>AdminCompany.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCompany.aspx.designer.cs">
+      <DependentUpon>AdminCompany.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminFileUpDown.aspx.cs">
+      <DependentUpon>AdminFileUpDown.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminFileUpDown.aspx.designer.cs">
+      <DependentUpon>AdminFileUpDown.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMenu.aspx.cs">
+      <DependentUpon>AdminMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminMenu.aspx.designer.cs">
+      <DependentUpon>AdminMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMessage.aspx.cs">
+      <DependentUpon>AdminMessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminMessage.aspx.designer.cs">
+      <DependentUpon>AdminMessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminOtherPage.aspx.cs">
+      <DependentUpon>AdminOtherPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminOtherPage.aspx.designer.cs">
+      <DependentUpon>AdminOtherPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminProduct.aspx.cs">
+      <DependentUpon>AdminProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminProduct.aspx.designer.cs">
+      <DependentUpon>AdminProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonHelp.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AdminNav.ascx.cs">
+      <DependentUpon>AdminNav.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\AdminNav.ascx.designer.cs">
+      <DependentUpon>AdminNav.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\banner.ascx.cs">
+      <DependentUpon>banner.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\banner.ascx.designer.cs">
+      <DependentUpon>banner.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CatagoryControl.ascx.cs">
+      <DependentUpon>CatagoryControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CatagoryControl.ascx.designer.cs">
+      <DependentUpon>CatagoryControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Comment.ascx.cs">
+      <DependentUpon>Comment.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Comment.ascx.designer.cs">
+      <DependentUpon>Comment.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CompanyControl.ascx.cs">
+      <DependentUpon>CompanyControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CompanyControl.ascx.designer.cs">
+      <DependentUpon>CompanyControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ContactToolControl.ascx.cs">
+      <DependentUpon>ContactToolControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ContactToolControl.ascx.designer.cs">
+      <DependentUpon>ContactToolControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="FAQS.aspx.cs">
+      <DependentUpon>FAQS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FAQS.aspx.designer.cs">
+      <DependentUpon>FAQS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FileUpload.ascx.cs">
+      <DependentUpon>FileUpload.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\FileUpload.ascx.designer.cs">
+      <DependentUpon>FileUpload.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Header.ascx.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Header.ascx.designer.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LoginControl.ascx.cs">
+      <DependentUpon>LoginControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\LoginControl.ascx.designer.cs">
+      <DependentUpon>LoginControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MenuControl.ascx.cs">
+      <DependentUpon>MenuControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\MenuControl.ascx.designer.cs">
+      <DependentUpon>MenuControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MessageControl.ascx.cs">
+      <DependentUpon>MessageControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\MessageControl.ascx.designer.cs">
+      <DependentUpon>MessageControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MessageSubmitControl.ascx.cs">
+      <DependentUpon>MessageSubmitControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\MessageSubmitControl.ascx.designer.cs">
+      <DependentUpon>MessageSubmitControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NewsControl.ascx.cs">
+      <DependentUpon>NewsControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\NewsControl.ascx.designer.cs">
+      <DependentUpon>NewsControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PayMentControl.ascx.cs">
+      <DependentUpon>PayMentControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\PayMentControl.ascx.designer.cs">
+      <DependentUpon>PayMentControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PayMentEditControl.ascx.cs">
+      <DependentUpon>PayMentEditControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\PayMentEditControl.ascx.designer.cs">
+      <DependentUpon>PayMentEditControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ProductControl.ascx.cs">
+      <DependentUpon>ProductControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ProductControl.ascx.designer.cs">
+      <DependentUpon>ProductControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MenuEditeControl.ascx.cs">
+      <DependentUpon>MenuEditeControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\MenuEditeControl.ascx.designer.cs">
+      <DependentUpon>MenuEditeControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ProductDetail.ascx.cs">
+      <DependentUpon>ProductDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ProductDetail.ascx.designer.cs">
+      <DependentUpon>ProductDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SlideImg.ascx.cs">
+      <DependentUpon>SlideImg.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\SlideImg.ascx.designer.cs">
+      <DependentUpon>SlideImg.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default22.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default22.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default22.aspx.designer.cs">
+      <DependentUpon>Default22.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ProductEditControl.ascx.cs">
+      <DependentUpon>ProductEditControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ProductEditControl.ascx.designer.cs">
+      <DependentUpon>ProductEditControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NewsEditControl.ascx.cs">
+      <DependentUpon>NewsEditControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\NewsEditControl.ascx.designer.cs">
+      <DependentUpon>NewsEditControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CatagoryEditControl.ascx.cs">
+      <DependentUpon>CatagoryEditControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CatagoryEditControl.ascx.designer.cs">
+      <DependentUpon>CatagoryEditControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ProductByCatagoryControl.ascx.cs">
+      <DependentUpon>ProductByCatagoryControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ProductByCatagoryControl.ascx.designer.cs">
+      <DependentUpon>ProductByCatagoryControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CompanyEditeControl.ascx.cs">
+      <DependentUpon>CompanyEditeControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CompanyEditeControl.ascx.designer.cs">
+      <DependentUpon>CompanyEditeControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NewsDetailControl.ascx.cs">
+      <DependentUpon>NewsDetailControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\NewsDetailControl.ascx.designer.cs">
+      <DependentUpon>NewsDetailControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NewsAllControl.ascx.cs">
+      <DependentUpon>NewsAllControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\NewsAllControl.ascx.designer.cs">
+      <DependentUpon>NewsAllControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AboutUsControl.ascx.cs">
+      <DependentUpon>AboutUsControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\AboutUsControl.ascx.designer.cs">
+      <DependentUpon>AboutUsControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FAQSControl.ascx.cs">
+      <DependentUpon>FAQSControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\FAQSControl.ascx.designer.cs">
+      <DependentUpon>FAQSControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="News.aspx.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="News.aspx.designer.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsDetailById.aspx.cs">
+      <DependentUpon>NewsDetailById.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsDetailById.aspx.designer.cs">
+      <DependentUpon>NewsDetailById.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order.aspx.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order.aspx.designer.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ord1.aspx.cs">
+      <DependentUpon>Ord1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ord1.aspx.designer.cs">
+      <DependentUpon>Ord1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PageControl.ascx.cs">
+      <DependentUpon>PageControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\PageControl.ascx.designer.cs">
+      <DependentUpon>PageControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Page.Master.cs">
+      <DependentUpon>Page.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page.Master.designer.cs">
+      <DependentUpon>Page.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPayment11.aspx.cs">
+      <DependentUpon>AdminPayment11.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPayment11.aspx.designer.cs">
+      <DependentUpon>AdminPayment11.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.aspx.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment.aspx.designer.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product.aspx.cs">
+      <DependentUpon>Product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product.aspx.designer.cs">
+      <DependentUpon>Product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product1.aspx.cs">
+      <DependentUpon>Product1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product1.aspx.designer.cs">
+      <DependentUpon>Product1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductByCatagory.aspx.cs">
+      <DependentUpon>ProductByCatagory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductByCatagory.aspx.designer.cs">
+      <DependentUpon>ProductByCatagory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductByCatagory1111.aspx.cs">
+      <DependentUpon>ProductByCatagory1111.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductByCatagory1111.aspx.designer.cs">
+      <DependentUpon>ProductByCatagory1111.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductDetailById.aspx.cs">
+      <DependentUpon>ProductDetailById.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductDetailById.aspx.designer.cs">
+      <DependentUpon>ProductDetailById.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminNews.aspx.cs">
+      <DependentUpon>AdminNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminNews.aspx.designer.cs">
+      <DependentUpon>AdminNews.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Project1\Model\Model.csproj">
+      <Project>{BD344160-37B6-4E96-8381-39524583C6EA}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{115514B1-EEF4-4C98-86A4-70AFC4B93E9C}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IDAL\IDAL.csproj">
+      <Project>{24405E90-19A5-40AF-B358-F3532759FB33}</Project>
+      <Name>IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SQLHelper\DBUtility.csproj">
+      <Project>{C4EE4985-A3A3-430D-BE47-9F9502033299}</Project>
+      <Name>DBUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SQLServer\SQLServerDAL.csproj">
+      <Project>{A7BE25F9-62FE-42F5-ADCB-0956539CAFE2}</Project>
+      <Name>SQLServerDAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin.Master" />
+    <Content Include="AdminCatagory.aspx" />
+    <Content Include="AdminFileUpDown.aspx" />
+    <Content Include="AdminMenu.aspx" />
+    <Content Include="AdminMessage.aspx" />
+    <Content Include="AdminNews.aspx" />
+    <Content Include="AdminProduct.aspx" />
+    <Content Include="Controls\AdminNav.ascx" />
+    <Content Include="Controls\FileUpload.ascx" />
+    <Content Include="Controls\PageControl.ascx" />
+    <Content Include="Controls\MenuEditeControl.ascx" />
+    <Content Include="Controls\ProductEditControl.ascx" />
+    <Content Include="Controls\NewsEditControl.ascx" />
+    <Content Include="Controls\CatagoryEditControl.ascx" />
+    <Content Include="Controls\ProductByCatagoryControl.ascx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Product1.aspx" />
+    <Content Include="ProductByCatagory1111.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AboutUs.aspx" />
+    <Content Include="AdminCompany.aspx" />
+    <Content Include="AdminOtherPage.aspx" />
+    <Content Include="ContactUs.aspx" />
+    <Content Include="Controls\banner.ascx" />
+    <Content Include="Controls\Comment.ascx" />
+    <Content Include="Controls\CompanyControl.ascx" />
+    <Content Include="Controls\CompanyEditeControl.ascx" />
+    <Content Include="Controls\ContactToolControl.ascx" />
+    <Content Include="FAQS.aspx" />
+    <Content Include="Controls\Footer.ascx" />
+    <Content Include="Controls\Header.ascx" />
+    <Content Include="Controls\PayMentControl.ascx" />
+    <Content Include="Controls\PayMentEditControl.ascx" />
+    <Content Include="Controls\ProductDetail.ascx" />
+    <Content Include="Controls\SlideImg.ascx" />
+    <Content Include="Edition\kindeditor-min.js" />
+    <Content Include="Edition\lang\ar.js" />
+    <Content Include="Edition\lang\en.js" />
+    <Content Include="Edition\lang\zh_CN.js" />
+    <Content Include="Edition\lang\zh_TW.js" />
+    <Content Include="Controls\AboutUsControl.ascx" />
+    <Content Include="Controls\FAQSControl.ascx" />
+    <Content Include="Edition\themes\common\anchor.gif" />
+    <Content Include="Edition\themes\common\blank.gif" />
+    <Content Include="Edition\themes\common\flash.gif" />
+    <Content Include="Edition\themes\common\loading.gif" />
+    <Content Include="Edition\themes\common\media.gif" />
+    <Content Include="Edition\themes\common\rm.gif" />
+    <Content Include="Edition\themes\default\background.png" />
+    <Content Include="Edition\themes\default\default.css" />
+    <Content Include="Edition\themes\default\default.png" />
+    <Content Include="Edition\themes\qq\editor.gif" />
+    <Content Include="Edition\themes\qq\qq.css" />
+    <Content Include="Edition\themes\simple\simple.css" />
+    <Content Include="Images\bg.png" />
+    <Content Include="Controls\NewsDetailControl.ascx" />
+    <Content Include="Controls\NewsAllControl.ascx" />
+    <Content Include="Index.aspx" />
+    <Content Include="Javascript\jq.js" />
+    <Content Include="Javascript\jquery-1.js" />
+    <Content Include="Javascript\reset.css" />
+    <Content Include="Javascript\slide.css" />
+    <Content Include="News.aspx" />
+    <Content Include="NewsDetailById.aspx" />
+    <Content Include="Order.aspx" />
+    <Content Include="Page.Master" />
+    <Content Include="AdminPayment11.aspx" />
+    <Content Include="Payment.aspx" />
+    <Content Include="Product.aspx" />
+    <Content Include="ProductByCatagory.aspx" />
+    <Content Include="ProductDetailById.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2103</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

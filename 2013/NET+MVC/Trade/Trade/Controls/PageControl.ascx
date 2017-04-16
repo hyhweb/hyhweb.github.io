@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="PageControl.ascx.cs" Inherits="Trade.PageControl" %>
+<div><asp:HyperLink ID="pageprev" runat="server">上一页</asp:HyperLink><asp:HyperLink ID="pagenext" runat="server">下一页</asp:HyperLink></div>

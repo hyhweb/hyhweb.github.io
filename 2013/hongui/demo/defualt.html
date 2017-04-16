@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link type="text/css" rel="stylesheet" href="../themes/common.css" />
+    <script type="text/javascript" src="../jquery.js"></script>
+    <script type="text/javascript" src="../core/base.js"></script>
+    <script type="text/javascript" src="../plugins/button.js"></script>
+    <script type="text/javascript" src="../plugins/btn.js"></script>
+    <script type="text/javascript" src="../plugins/textbox.js"></script>
+    <script type="text/javascript" src="../plugins/radio.js"></script>
+    <script type="text/javascript" src="../plugins/checkbox.js"></script>
+    <script type="text/javascript" src="../plugins/select.js"></script>
+    <script type="text/javascript" src="../plugins/combobox.js"></script>
+    <script type="text/javascript" src="../plugins/toolbar.js"></script>
+    <script type="text/javascript" src="../plugins/hongtab.js"></script>
+    <script type="text/javascript" src="../plugins/accordion.js"></script>
+    <script type="text/javascript" src="../plugins/dialog.js"></script>
+    <script type="text/javascript" src="../plugins/page.js"></script>
+    <script type="text/javascript" src="../plugins/menubar.js"></script>
+    <script type="text/javascript" src="../plugins/menu.js"></script>
+    <script type="text/javascript" src="../plugins/tip.js"></script>
+    <script type="text/javascript" src="../plugins/drag.js"></script>
+    <script type="text/javascript" src="../plugins/resizable.js"></script>
+    <script type="text/javascript" src="../plugins/form.js"></script>
+    <script type="text/javascript" src="../plugins/grid.js"></script>
+    <script type="text/javascript">
+        $(function(){
+          /*  toolbar*/
+            $(".toolbar1").toolbar({
+                        items:[
+                            {text:"新增",line:true,icon:"toolbar-icon1",disabled:true,click:null},
+                            {text:"多语言",line:true,icon:"toolbar-icon2",disabled:false,click:function(){ alert("toolbar2")}},
+                            {text:"新增",line:true,icon:"toolbar-icon1",disabled:true,click:null},
+                            {text:"审核",line:true,icon:"toolbar-icon1",disabled:true,click:null},
+                            {text:"上架",line:true,icon:"toolbar-icon1",disabled:true,click:null},
+                            {text:"下架",line:true,icon:"toolbar-icon1",disabled:true,click:null},
+                            {text:"停用",line:true,icon:"toolbar-icon1",disabled:true,click:null},
+                            {text:"启用",line:true,icon:"toolbar-icon1",disabled:true,click:null},
+                            {text:"导入",line:true,icon:"toolbar-icon1",disabled:true,click:null}
+                        ]}
+            );
+
+
+            /*dataform*/
+            $("form").form({
+                idcode:"form",
+                headername:"基础信息",
+                rows: [
+                    { display: "产品名称", name: "ProductName", type: "text"},
+                    { display: "供货地点 ", name: "CategoryID", type: "select",data:{options: [{ id: 1, text: '广东' },{ id: 2, text: '福建' },{ id: 3, text: '上海' },{ id: 4, text: '北京'}]}},
+                    { display: "产品名称", name: "ProductName", type: "text"},
+                    { display: "供货地点 ", name: "CategoryID", type: "select",data:{options: [{ id: 1, text: '广东' },{ id: 2, text: '福建' },{ id: 3, text: '上海' },{ id: 4, text: '北京'}]}},
+                    { display: "产品名称", name: "ProductName", type: "text"},
+                    { display: "供货地点 ", name: "CategoryID", type: "select",data:{options: [{ id: 1, text: '广东' },{ id: 2, text: '福建' },{ id: 3, text: '上海' },{ id: 4, text: '北京'}]}},
+                    { display: "产品名称", name: "ProductName", type: "text"},
+                    { display: "供货地点 ", name: "CategoryID", type: "select",data:{options: [{ id: 1, text: '广东' },{ id: 2, text: '福建' },{ id: 3, text: '上海' },{ id: 4, text: '北京'}]}},
+                    { display: "产品名称", name: "ProductName", type: "text"},
+                    { display: "供货地点 ", name: "CategoryID", type: "select",data:{options: [{ id: 1, text: '广东' },{ id: 2, text: '福建' },{ id: 3, text: '上海' },{ id: 4, text: '北京'}]}},
+                    { display: "产品名称", name: "ProductName", type: "text"},
+                    { display: "供货地点 ", name: "CategoryID", type: "select",data:{options: [{ id: 1, text: '广东' },{ id: 2, text: '福建' },{ id: 3, text: '上海' },{ id: 4, text: '北京'}]}},
+                    { display: "供应商", name: "SupplierID", type: "textarea" },
+                    { display: "备注", name: "Remark", type: "checkbox" },
+                    { display: "备注1", name: "Remark1", type: "checkbox" },
+                    { display: "已订购", name: "buy", type: "radio" },
+                    { display: "未订购", name: "buy", type: "radio" },
+                    { display: "提交", name: "botton", type: "button" }
+                ]
+            });
+
+
+/*datagrid*/
+            var jsonobj = {};
+            jsonobj.datagridheader="员工资料";
+            jsonobj.Rows = [
+                { id: 3, name: "林三", sex: "男", birthday: "1989/01/12" },
+                { id: 43, name: "陈丽", sex: "女", birthday: "1989/01/12" },
+                { id: 33, name: "啊三", sex: "男", birthday: "1981/12/12" },
+                { id: 34, name: "表三", sex: "男", birthday: "1983/01/12" },
+                { id: 43, name: "陈丽", sex: "女", birthday: "1989/01/12" },
+                { id: 10, name: "成三", sex: "男", birthday: "1989/11/13" }
+
+
+            ];
+            $(".grid").grid({
+                columns: [
+                    { display: '排序', name: 'id', width: 200 },
+                    { display: '名字', name: 'name', width: 200 },
+                    { display: '性别', name: 'sex', width: 200 },
+                    { display: '生日', name: 'birthday', width: 200 }
+                ], width: 600,
+                data: jsonobj
+            });
+
+
+
+
+
+        });
+    </script>
+
+</head>
+<body>
+<div class="toolbar1"></div>
+<form></form>
+<div  class="grid"></div>
+</body>
+
+</html>

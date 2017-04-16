@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,body,ul,ol,li,table,tr,td,span{ margin:0; padding:0;}
+ul,ol,li{ list-style:none;}
+a:hover{ cursor:pointer;}
+body{ padding:10px; font-size:14px; background:#ededed; }
+/*button*/
+.button,.button span,.button label{ background-image:url(images/btn.png); background-repeat:no-repeat; background-position:-1000px -1000px; display:inline-block; *display:inline;*zoom:1;vertical-align:middle; height:30px;}
+.button{background-position: left top; padding-left:10px; margin-right:10px;}
+.button span{background-position: right -72px; padding-right:10px;}
+.button label{ line-height:30px;background-position: right -36px;}
+
+/*toolbar*/
+.toolbar,.toolbar-body,.toolbar-inner{ background-image:url(images/bg.png); background-repeat:no-repeat; background-position:-1000px -1000px; height:36px;}
+.toolbar{background-position:left top; padding-left:10px;}
+.toolbar-body{background-position:right -77px; padding-right:10px;}
+.toolbar-inner{background-position:left -38px; background-repeat:repeat-x;}
+.toolbar-item,.toolbar-separator{display:inline-block; *display:inline;*zoom:1;}
+.toolbar-item{ padding:0 10px; line-height:28px;}
+.toolbar-separator{}
+.toolbar-icon,.toolbar-text{display:inline-block; *display:inline;*zoom:1;vertical-align:middle;}
+/*tabs*/
+.tabs{ }
+.tab-header,.tab-header-inner,.tab-list{background-image:url(images/bg.png); background-repeat:no-repeat; background-position:-1000px -1000px; height:36px;}
+.tab-header{background-position:left -131px; padding-left:8px; margin-bottom:-1px;}
+.tab-header-inner{background-position:right -232px; padding-right:8px;}
+.tab-list{background-position:left -181px; background-repeat:repeat-x;}
+.tab-list li{ margin-top:7px;}
+.tab-list li,.tab-list li a,.tab-list li span{display:inline-block; *display:inline;*zoom:1; height:28px;}
+.tab-list li span{ line-height:26px; padding:0 10px;}
+.tab-content{background-color:#fafafa; border:1px solid #e6e5df; padding:10px;}
+.tab-list .selected{ background-color:#fafafa;border:1px solid #e6e5df; border-bottom:none; font-weight:bold;}
+.tip{ background-color:#ffffc2; border:1px solid #808080; padding:8px;}
+
+
+/*.masker{ background-color:#000000; opacity:0.3; filter:alpha(opacity=0.3); position:absolute; left:0;top:0; z-index:-1; width:100%; height:100%;}*/.dialog-header,.dialog-header-body,.dialog-header-inner{background-image:url(images/bg.png); background-repeat:no-repeat; background-position:-1000px -1000px; height:36px;}
+.dialog-header{background-position:left -131px; padding-left:10px; margin-bottom:-1px;}
+.dialog-header-body{background-position:right -232px; padding-right:10px;}
+.dialog-header-inner{background-position:left -181px; background-repeat:repeat-x; line-height:36px; font-size:14px; font-weight:bold; color:#333333;}
+.dialog-content{background-color:#fafafa; border:1px solid #e6e5df; padding:10px;}
+.dialog-footer{background-color:#f5f5f5; border:1px solid #e6e5df; padding:10px; margin-top:-1px; text-align:right;}
+.dialog-footer .dialog-footer-body{display:inline-block; *display:inline;*zoom:1;  }
+.dialog-footer:after{ clear:both; display:block; visibility:hidden; content:""; height:0;}
+
+/*accordion*/
+.accordion{background-color:#fafafa; border:1px solid #e6e5df;}
+.accordion .item-header{border-bottom:1px solid #e6e5df; padding:10px; cursor:pointer;}
+.accordion .accordion-cntent{border-bottom:1px solid #e6e5df; padding:10px;}
+.accordion .item-selected,.accordion .item-over{background-color:#f5f5f5;}
+
+/*dataform*/
+.dataform{ padding-top:10px;}
+.dataform-header,.dataform-header-body,.dataform-header-inner{background-image:url(images/bg.png); background-repeat:no-repeat; background-position:-1000px -1000px; height:36px;}
+.dataform-header{background-position:left -131px; padding-left:8px; margin-bottom:-1px;}
+.dataform-header-body{background-position:right -232px; padding-right:8px;}
+.dataform-header-inner{background-position:left -181px; background-repeat:repeat-x; line-height:36px; font-size:14px; font-weight:bold; color:#333333;}
+.dataform-body{background-color:#fafafa; border:1px solid #e6e5df; padding:10px;}
+
+.label{ width:100px; text-align:right; display:inline-block; padding-right:10px;vertical-align:middle;}
+.dataform-item{display:inline-block; *display:inline;*zoom:1; padding-top:6px;}
+input[type=text],select,textarea{ width:200px; vertical-align:middle;}
+
+
+/*datagrid*/
+.datagrid{ padding-top:10px;}
+.datagrid-tool{ padding:8px; background-color:#f5f4f2;border-left:1px solid #e6e5df;border-right:1px solid #e6e5df;}
+.datagrid-header,.datagrid-header-body,.datagrid-header-inner{background-image:url(images/bg.png); background-repeat:no-repeat; background-position:-1000px -1000px; height:36px;}
+.datagrid-header{background-position:left -131px; padding-left:8px; margin-bottom:-1px;}
+.datagrid-header-body{background-position:right -232px; padding-right:8px;}
+.datagrid-header-inner{background-position:left -181px; background-repeat:repeat-x; line-height:36px; font-size:14px; font-weight:bold; color:#333333;}
+.datagrid-body{background-color:#fafafa; border:1px solid #e6e5df; }
+.datagrid table{ border-spacing:0px; border-right:1px solid #f0f0f0;}
+.datagrid table td{ border-bottom:1px solid #f0f0f0;border-left:1px solid #f0f0f0; line-height:36px; text-indent:10px; color:#6b6455; }
+.datagrid table thead{background-color:#f5f4f2;}
+.datagrid table thead td{border-left:1px solid #e6e5df;}
+.datagrid table thead .datagrid-cell{border-left:1px solid #fafafa; display:inlien-block;}
+.datagrid .odd{ background-color:#f7fafa;}
+.datagrid .even{background-color:#f5f7f7;}
+.datagrid .over{background-color:#fff8ab;}
+
+
+/*tree*/
+.tree{background-color:#fafafa; border:1px solid #e6e5df; padding:10px;}
+.tree span{ cursor:pointer;display:inline-block; vertical-align:middle;}
+.tree .box{width:20px; height:20px; display:inline-block; vertical-align:middle;}
+.note-parent .body:hover{ background-color:#eee;}
+
+
+.accorder1{ background:url(images/logo.png) no-repeat; overflow-y:auto;}
+.accorder{ color:#876a37;}
+.accorder-content{ border-bottom:1px solid #bdad84; background:#ccc7be;}
+.accorder-content a:hover,.accorder-header:hover{ font-weight:bold; text-decoration:underline;}
+
+
+
+
+
+
+
+

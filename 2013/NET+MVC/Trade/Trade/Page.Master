@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Page.master.cs" Inherits="Trade.Page" %>
+<%@ Register Src="~/Controls/LoginControl.ascx" TagName="LoginControl" TagPrefix="Trade" %>
+<%@ Register Src="~/Controls/MenuControl.ascx" TagName="MenuControl" TagPrefix="Trade" %>
+<%@ Register Src="~/Controls/ProductControl.ascx" TagName="ProductControl" TagPrefix="Trade" %>
+<%@ Register Src="~/Controls/CatagoryControl.ascx" TagName="CatagoryControl"  TagPrefix="Trade" %>
+<%@ Register Src="~/Controls/MessageControl.ascx" TagName="MessageControl" TagPrefix="Trade" %>
+<%@ Register Src="~/Controls/NewsControl.ascx" TagName="NewsControl" TagPrefix="Trade" %>
+<%@ Register Src="~/Controls/CompanyControl.ascx" TagName="CompanyControl" TagPrefix="Trader" %>
+<%@ Register Src="~/Controls/Comment.ascx" TagName="Comment" TagPrefix="Trade"%>
+<%@ Register Src="~/Controls/Footer.ascx" TagName="Footer" TagPrefix="Trade" %>
+<%@ Register Src="~/Controls/Header.ascx" TagName="Header" TagPrefix="Trade" %>
+<%@ Register Src="~/Controls/banner.ascx" TagName="banner" TagPrefix="Trade" %>
+<%@ Register Src="~/Controls/ContactToolControl.ascx" TagName="ContactToolControl" TagPrefix="Trade" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>无标题页</title>
+    <link href="App_Themes/theme/main.css" type="text/css" rel="Stylesheet" />
+    <link href="Javascript/reset.css"type="text/css" rel="Stylesheet" />
+    <link href="Javascript/slide.css"type="text/css" rel="Stylesheet" />
+    <script type="text/javascript" src="Javascript/jquery-1.js"></script>
+    <script type="text/javascript" src="Javascript/jq.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="wrapper">
+    <div class="header">
+    <Trade:Header ID="headerbox" runat="server" />
+    <div class="mainmenu">
+    <Trade:MenuControl ID="menubox" runat="server" />
+    
+    </div>
+    </div>
+   <Trade:banner ID="bannerbox" runat="server" />
+    <div class="body">
+        <div class="main">
+             <div class="mainnav">
+             <Trade:LoginControl ID="loginbox" runat="server" />
+             <Trade:CatagoryControl ID="catagorybox" runat="server" />  
+             <Trade:NewsControl ID="newsbox" runat="server" />
+             <Trader:CompanyControl ID="companybox" runat="server" />
+             </div>
+             <div class="body-inner">
+             <asp:ContentPlaceHolder ID="PageContentPlaceHolder" runat="server">
+                
+             </asp:ContentPlaceHolder>
+             
+            
+             </div>
+             <div style=" clear:both;"></div>
+             <div class="footer">
+             <Trade:Footer ID="footerbox" runat="server" />
+            
+            </div>
+        </div>
+        
+      
+        
+    </div>
+    </div>
+    </form>
+   <Trade:ContactToolControl ID="contacttToolcontrol" runat="server" />
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+      ul,li{list-style: none; margin: 0; padding: 0;}
+     .imgitem{ float:left;}
+     .fore,.next{ width: 30px; height: 30px; display:block; background-color: #ccc; cursor: pointer;}
+
+        .smallimg{ width: 50px; height: 50px;}
+    </style>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="slide.js"></script>
+    <script type="text/javascript">
+        $(function(){
+
+            $("table tr:nth-child(even)").css({background:"#ccc"});
+            $(".checkall").click(function(){
+                if(this.checked){
+                    $(".tb tr td input[type=checkbox]").attr("checked",true);
+                }else{
+                    $(".tb tr td input[type=checkbox]").attr("checked",false);
+                }
+            });
+
+            $(".delete").click(function(){
+                var length=$(".tb tr td input:checked").not(".checkall").length;
+                if(length > 0){
+                    $(".tb tr td input[type=checkbox]").not(".checkall").each(function(i,item){
+                        if(this.checked){
+                            $(".tb tr[id="+this.value+"]").remove();
+                        }
+                    })
+                            }
+            });
+            $(".tb tr td img").hover(function(e){
+                $(".tipimg").show().css({left:e.pageX+10,top:e.pageY+10,width:200,height:200,position:"absolute"}).attr("src",this.src);
+            },function(){
+                $(".tipimg").hide();
+            });
+
+
+
+
+
+        });
+    </script>
+
+</head>
+<body>
+
+<table class="tb">
+    <tr><td>number</td><td>select</td><td>img</td></tr>
+    <tr id="1"><td>1</td><td><input type="checkbox" value="1"></td><td><img class="smallimg" src="img/1.jpg" alt="" ></td></tr>
+    <tr id="2" ><td>2</td><td><input type="checkbox" value="2"></td><td><img class="smallimg" src="img/2.jpg" alt="" ></td></tr>
+    <tr id="3" ><td>3</td><td><input type="checkbox" value="3"></td><td><img class="smallimg" src="img/3.jpg" alt="" ></td></tr>
+    <tr id="4"><td>4</td><td><input type="checkbox" value="4"></td><td><img class="smallimg" src="img/1.jpg" alt="" ></td></tr>
+    <tr><td>checkall</td><td><input class="checkall" type="checkbox" value="0"></td><td><input class="delete" type="button" value="delete"></td></tr>
+</table>
+<img class="tipimg" >
+</body>
+
+</html>
