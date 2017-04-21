@@ -1,8 +1,0 @@
-html,body,ul,ol,li,form,dl,dt,dd,pre,p{ margin: 0; padding: 0;font-size: 14px;}
-ul,ol,li,dl,dt,dd{ list-style: none; }
-a{ cursor: pointer; text-decoration: none;}
-html,body{background-color: #d72f3c;  font-size:14px; 
-  font-family: "Arial","Microsoft yahei", "Hiragino Sans GB", "冬青黑体简体中文 w3", "Microsoft Yahei", "Hiragino Sans GB", "冬青黑体简体中文 w3", STXihei, "华文细黑", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;}
-
-.flexbox{  display:-webkit-flex;display:-moz-flex;display:-o-flex;display:-ms-flex;display:flex;}
-.flexitem{display:inline-block; vertical-align: middle; -webkit-flex:1;-moz-flex:1;-o-flex:1;-ms-flex:1;flex:1;}
