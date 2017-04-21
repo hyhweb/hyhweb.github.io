@@ -1,0 +1,150 @@
+.left-img-box {
+	position: relative;;
+  width: 50%;
+}
+
+.right-img-box {
+  width: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.bottom-img-box {
+  width: 100%;
+  position: absolute;
+  top: 44%;
+  left: 0;
+}
+
+.left-img,.right-img,.bottom-img{
+  position: relative;
+   width: 100%;
+}
+ 
+.arrow{
+ position: absolute;
+ z-index: 2; 
+ top:-31%;
+ left:30%;
+ width:40%;
+}
+
+/*.left-img-box{
+
+	-webkit-animation: leftkeyframes 1s linear  1 normal;
+	-moz-animation: leftkeyframes 1s linear  1 normal;
+	-ms-animation: leftkeyframes 1s linear 1 normal;
+	-o-animation: leftkeyframes 1s linear 1 normal;
+	 animation: leftkeyframes 1s linear  1 normal;
+
+}
+  @keyframes leftkeyframes
+  {
+  	from { left:0px;top:0px;}
+  	to {left:-150%;top:-1000px;}
+  }
+   @-webkit-keyframes leftkeyframes
+  {
+  	from { left:0px;top:0px;}
+    to {left:-150%;top:-1000px;}
+  }
+  @-moz-keyframes  leftkeyframes
+  {
+  from { left:0px;top:0px;}
+    to {left:-150%;top:-1000px;}
+  }
+  @-o-keyframes leftkeyframes
+  {
+  	from { left:0px;top:0px;}
+    to {left:-150%;top:-1000px;}
+  }
+
+.right-img-box{
+
+	-webkit-animation: rightframes 1s linear  1 normal;
+	-moz-animation: rightframes 1s linear  1 normal;
+	-ms-animation: rightframes 1s linear 1 normal;
+	-o-animation: rightframes 1s linear 1 normal;
+	 animation: rightframes 1s linear  1 normal;
+
+}
+  @keyframes rightframes
+  {
+  	from { left:50%;top:0px;}
+    to {left:200%;top:-1000px;}
+  }
+   @-webkit-keyframes rightframes
+  {
+   from { left:50%;top:0px;}
+    to {left:200%;top:-1000px;}
+  }
+  @-moz-keyframes  rightframes
+  {
+    from { left:50%;top:0px;}
+    to {left:200%;top:-1000px;}
+  }
+  @-o-keyframes rightframes
+  {
+    from { left:50%;top:0px;}
+    to {left:200%;top:-1000px;}
+  }
+
+.bottom-img-box{
+
+  -webkit-animation: bottomframes 1s linear  1 normal;
+  -moz-animation: bottomframes 1s linear  1 normal;
+  -ms-animation: bottomframes 1s linear 1 normal;
+  -o-animation: bottomframes 1s linear 1 normal;
+   animation: bottomframes 1s linear  1 normal;
+
+}
+  @keyframes bottomframes
+  {
+    from { margin-top:0px;}
+    to {margin-top:150%;}
+  }
+   @-webkit-keyframes bottomframes
+  {
+  from { margin-top:0px;}
+    to {margin-top:150%;}
+  }
+  @-moz-keyframes  bottomframes
+  {
+   from { margin-top:0px;}
+    to {margin-top:150%;}
+  }
+  @-o-keyframes bottomframes
+  {
+   from { margin-top:0px;}
+    to {margin-top:150%;}
+  }
+*/
+.arrow{
+
+  -webkit-animation: arrowframes 1s linear  infinite normal;
+  -moz-animation: arrowframes 1s linear  infinite normal;
+  -ms-animation: arrowframes 1s linear infinite normal;
+  -o-animation: arrowframes 1s linear infinite normal;
+   animation: arrowframes 1s linear  infinite normal;
+
+}
+  @keyframes arrowframes
+  {
+    from { opacity:1}
+    to {opacity:0;}
+  }
+   @-webkit-keyframes arrowframes
+  {
+  from { opacity:1}
+    to {opacity:0;}
+  }
+  @-moz-keyframes  arrowframes
+  {
+    from { opacity:1}
+    to {opacity:0;}
+  }
+  @-o-keyframes arrowframes
+  {
+    from { opacity:1}
+    to {opacity:0;}
+  }

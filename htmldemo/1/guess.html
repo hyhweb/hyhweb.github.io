@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link type="text/css" rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/guess.css" type="text/css">
+	<script type="text/javascript" src="js/zepto.min.js"></script>	
+</head>
+<body>
+	<section class="guess-box">
+		<ul class="guess">
+			<li class="header"><img  src="images/guess/03-ding.jpg" alt=""></li>
+			<li>
+				<div class="message">
+					<span class="flexitem">
+						<img class="faceimg" src="images/sy-cy.png" alt="">
+						<span class="showmessage">很好玩，中了很多奖品</span>
+					</span>
+					<span class="flexitem">
+						<img class="faceimg" src="images/sy-cy.png" alt="">
+						<span class="showmessage">很好玩，中了很多奖品</span>
+					</span>
+				</div>
+			</li>
+			<li>
+				<div class="guesslist">
+					<dl>
+						<dt>
+							<div>请戳出<span class="count">3</span>个苹果新品</div>
+						</dt>
+						<dd>
+							<img src="images/guess/1/1.png" alt="" class="imgitem imgs1">
+							 <img class="error-icon" src="images/guess/03-kuang.png" alt="">
+		
+						</dd>
+						<dd>
+							<img src="images/guess/1/2.png" alt="" class="imgitem imgs2">
+							 <img class="right-icon" src="images/guess/03-kuang2.png" alt="">
+
+						</dd>
+						<dd><img src="images/guess/1/3.png" alt="" class="imgitem imgs3">
+
+						</dd>
+						<dd><img src="images/guess/1/4.png" alt="" class="imgitem imgs4">
+		
+						</dd>
+						<dd><img src="images/guess/1/5.png" alt="" class="imgitem imgs5">
+	
+						</dd>
+						<dd><img src="images/guess/1/6.png" alt="" class="imgitem imgs6">
+
+						</dd>
+						<dd><img src="images/guess/1/7.png" alt="" class="imgitem imgs7">
+	
+						</dd>
+						<dd><img src="images/guess/1/8.png" alt="" class="imgitem imgs8">
+	
+						</dd>
+						<dd><img src="images/guess/1/9.png" alt="" class="imgitem imgs9">
+					
+						</dd>
+					</dl>
+				</div>
+			</li>
+			<li>
+			<span class="guess-tipper"><label>果粉福利么么哒</label></span>
+			</li>
+			<li><a><img class="guess-btn" src="images/guess/03-xs.gif" alt=""></a>
+			<a class="view" href=""><span>查看产品</span></a>
+			</li>
+		</ul>
+		<footer>
+	<div class="footer-inner"><a href=""><img src="images/talents/05-banner.jpg" alt=""></a></div>
+</footer>
+	</section>
+
+
+
+
+
+<div class="dialog-box" id="select-result">
+    <div class="dialog-body p90">
+        <div class="dialog-body-inner">
+            <a class="close-btn"  alt="关闭按钮"></a>
+            <img src="images/guess/03-ts1.png">
+        </div>
+
+    </div>
+</div>
+
+
+
+<div class="dialog-box" id="select-result1">
+    <div class="dialog-body p90">
+        <div class="dialog-body-inner">
+            <a class="close-btn"  alt="关闭按钮"></a>
+            <img src="images/guess/03-ts2.png">
+             <a class="use-btn" alt="分享朋友圈按钮"></a>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="dialog-box" id="select-result2">
+    <div class="dialog-body p90">
+        <div class="dialog-body-inner">
+            <a class="close-btn"  alt="关闭按钮"></a>
+            <img src="images/guess/03-ts3.png">
+             <a class="use-btn" alt="立即领奖按钮"></a>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<div class="dialog-box" id="select-result3">
+    <div class="dialog-body">
+        <div class="dialog-body-inner">
+            <a class="close-btn" alt="关闭按钮"></a>
+            <img src="images/guess/03-gz.png">
+            <img src="images/guess/03-gz2.jpg">
+            <img src="images/guess/03-gz3.jpg">
+            <img src="images/guess/03-gz4.jpg">
+            <img src="images/guess/03-gz5.png">
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</body>
+<script type="text/javascript">
+    var dialog =  $("#select-result");
+    // $(".vote-btn").click(function(){
+    //     dialog.css({ visibility: "visible"});
+    // });
+    $("#select-result .close-btn").click(function(){
+        dialog.css({ visibility: "hidden"});
+    });
+var dialog1 =  $("#select-result1");
+    // dialog1.find(".vote-btn").click(function(){
+    //     dialog1.css({ visibility: "visible"});
+    // });
+    dialog1.find(".close-btn").click(function(){
+        dialog1.css({ visibility: "hidden"});
+    });
+ dialog1.find(".use-btn").click(function(){
+        dialog1.css({ visibility: "hidden"});
+    });
+
+ var dialog2 =  $("#select-result2");
+    // dialog1.find(".vote-btn").click(function(){
+    //     dialog1.css({ visibility: "visible"});
+    // });
+    dialog2.find(".close-btn").click(function(){
+        dialog2.css({ visibility: "hidden"});
+    });
+ dialog2.find(".use-btn").click(function(){
+        dialog2.css({ visibility: "hidden"});
+    });
+
+ var dialog3 =  $("#select-result3");
+    // dialog1.find(".vote-btn").click(function(){
+    //     dialog1.css({ visibility: "visible"});
+    // });
+    dialog3.find(".close-btn").click(function(){
+        dialog3.css({ visibility: "hidden"});
+    });
+
+</script>
+</html>

@@ -1,0 +1,111 @@
+html,
+body {
+  background-color: #71ccfb;
+}
+.talents-show .flexbox{  display:-webkit-flex;display:-moz-flex;display:-o-flex;display:-ms-flex;display:flex;
+	box-sizing: border-box;
+
+}
+.talents-show .flexitem{display:inline-block; vertical-align: middle; -webkit-flex:1;-moz-flex:1;-o-flex:1;-ms-flex:1;flex:1;
+box-sizing: border-box;
+	width:30%;
+}
+
+.profile-all .flexitem{display:inline-block; vertical-align: middle; -webkit-flex:1;-moz-flex:1;-o-flex:1;-ms-flex:1;flex:1;
+box-sizing: border-box;
+	width:49%;
+}
+
+
+
+.header .header-inner img {
+  width: 100%;
+  position: relative;
+  margin-top: 11%;
+}
+.header .talents-logo {
+  width: 20%;
+  position: absolute;
+  left: 5%;
+  top: 2%;
+}
+.talents-show {
+  text-align: center;
+  padding: 0 20px;
+  margin-top: -20px;
+}
+.talents-show img {
+  width: 90%;
+}
+.talents-show a img:first-child {
+  display: none;
+}
+.talents-show a:hover img:first-child {
+  display: block;
+}
+.talents-show a:hover img:last-child {
+  display: none;
+}
+.talents .footer-inner {
+  text-align: center;
+}
+.talents .footer-inner img {
+  width: 50%;
+  padding-top: 10px;
+}
+.profile-all {
+  padding-top: 5%;
+}
+.profile-all ul li img {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
+.profile-list-header {
+  position: relative;
+}
+.profile-list-header .profile-btns {
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  margin-top: -11%;
+}
+.profile-list-body {
+  width: 90%;
+  margin: 0 auto;
+  background-image: url('../images/talents/profile-box-body.png');
+  background-repeat: repeat-y;
+  background-size: 100%;
+}
+.profile-all ul li img.faceurl {
+  margin-top: -4%;
+}
+.profile-btns {
+  width: 90%;
+  margin: 0 auto;
+}
+.profile-btns img {
+  width: 80%;
+  margin: 0 auto;
+}
+.tipper {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 7%;
+}
+.context {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 10px 0;
+}
+.profile-list-body .context p {
+  margin: 0 2%;
+  font-size: 13px;
+  line-height: 30px;
+  color: #471810;
+}
+.talents.profile .footer-inner img {
+ /*width: 90%;
+  padding-top: 4%;
+  padding-bottom: 50px;
+*/}

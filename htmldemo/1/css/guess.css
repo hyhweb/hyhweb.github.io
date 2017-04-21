@@ -1,0 +1,33 @@
+html,body{background-color: #fbf9e0;}
+a{ font-size: 1em; color: #333;}
+.guess .header img{ width: 100%;}
+.guess-tipper{display: block;margin: 0 auto; width: 80%; text-align: center;
+background-image: url('../images/guess/03-xians.gif');
+background-repeat: no-repeat;
+-webkit-background-size: 100% 100%;
+background-size: 100% 100%;
+
+}
+.guess-tipper label{font-size: 20px; padding:10% 5% 5%; display: block; color: #c72a35;   }
+.guess-btn{ padding:6% 6% 0;display: block; margin: 0 auto; width: 50%;}
+.view{ float: right; padding-right: 5%; margin-top: -6%;}
+
+.guess-box .footer-inner img{ width: 90%; margin: 5%;}
+
+.message{ width: 90%; margin:0 auto; background-color: #01cf84;border-radius: 100px; padding:2px;}
+.count{ font-size: 20px; padding:0 5px; color: #f6e03d;}
+.message .flexitem{ width: 49%;display: inline-block;}
+.message .showmessage{ color: #fff; white-space: nowrap;  overflow: hidden;   text-overflow: ellipsis; width: 60%; display: inline-block;vertical-align: middle; }
+.message .faceimg{ width: 24px;display: inline-block;vertical-align: middle;}
+.guesslist{ border: 4px solid #e64e5b; width: 90%; margin: 0 auto; margin-top:20px; background-color: #fff; }
+.guesslist dl{font-size: 0; background-color:#e64e5b; text-align: center;}
+
+.guesslist dt{ background-color: #e64e5b; padding-bottom: 10px;  text-align: center; color: #fff; font-size: 14px; }
+.guesslist dd{ width: 30%; overflow: hidden; background-color: #fff; display: inline-block; position: relative;border:2px solid #e8c6ab;box-size:border-box; }
+.guesslist dd img{ width: 100%; display: block; margin: auto;  height: 100px;}
+.error-icon,.right-icon{ position: absolute; left: 0; top: 0; width: 100%;}
+
+.guesslist dd img.hover-icon{position: absolute; left: 0; top: 0; width: 85%;display: none;}
+.guesslist dd:hover img.hover-icon {display: block;}
+
+.use-btn{ position: absolute;width: 60%; height: 15%; bottom: 0; left: 20%; display: block;}
