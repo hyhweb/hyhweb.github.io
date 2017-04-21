@@ -1,0 +1,5 @@
+[
+	{"id": 1, "name": "小明", "price": 500.01, "product": "电脑"},
+    {"id": 2, "name": "小红", "price": 10.99, "product": "手机"},
+    {"id": 3, "name": "小芳", "price": 19.99, "product": "平板"}
+]
