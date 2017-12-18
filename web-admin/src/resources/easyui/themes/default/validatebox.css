@@ -1,0 +1,12 @@
+.validatebox-invalid {
+  border-color: #ffa8a8;
+  background-color: #fff3f3;
+  color: #000;
+}
+.validatebox-text{
+  margin-left:5px;
+  padding:5px;
+  border:1px solid #95B8E7;
+  border-radius: 4px;
+  outline: none;
+}
