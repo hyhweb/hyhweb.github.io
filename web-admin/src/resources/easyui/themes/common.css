@@ -1,0 +1,45 @@
+
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+/*form*/
+.panel.form-box{
+    margin-bottom: 10px;
+}
+.form-inner{
+    padding:10px 10px 0 10px;
+}
+.form-item{
+    padding-bottom:10px;
+    display: inline-block;
+    *display: inline;
+    *zoom:1;
+}
+.form-item-text{
+    text-align: right;
+}
+.form-item-text,form-item-value{
+    display: inline-block;
+    *display: inline;
+    *zoom:1;
+}
+.form-inner .l-btn{
+    margin-left:20px;
+}
+
+/**
+tabs css
+ */
+.main-tab{
+    margin:10px;
+}
+.column2{
+    width:150px;
+}
+.column3{
+    width:200px;
+}
+.column4{
+    width:250px;
+}
+.combo-arrow,.spinner-arrow{
+    margin-left: -18px;
+}
