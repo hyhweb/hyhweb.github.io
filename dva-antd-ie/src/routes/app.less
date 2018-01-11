@@ -1,0 +1,148 @@
+html,body{
+  margin: 0;
+  padding: 0;
+  min-width: 1200px;
+  font-size: 13px;
+}
+a{
+  text-decoration: none;
+  color:#000;
+  &:active{
+    text-decoration: none;
+    color:#000;
+  }
+  &:hover{
+    text-decoration: none;
+    color:#000;
+  }
+}
+ul,ol,li,dl,dt,dd{
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.flex-box{
+  display: flex;
+}
+.flex-item{
+  flex:1
+}
+.center{
+  text-align: center;
+ 
+}
+.show{
+  display:block;
+}
+.hide{
+  display: none;
+}
+.inline{
+  display: inline-block;
+}
+
+
+/*form*/
+.form{
+  .form-item{
+    display: inline-block;
+    padding-right:20px;
+    .item-label{
+      padding: 0 10px;
+      color:#3D505E;
+    }
+    .item-input{
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 15px;
+      outline: none;
+      border:1px solid #C1D4E0;
+      line-height:24px;
+      text-indent: 10px;
+    }
+  }
+  
+}
+
+input{
+  outline: none;
+}
+#root{
+  width: 1196px;
+  margin: auto;
+}
+/*button*/
+.button{
+  border-radius: 4px;
+  cursor: pointer;
+  &.primary{
+    padding:5px 10px;
+    background-color: #1A9CEB;
+    
+    color:#fff;
+    text-align: center;
+    
+  }
+}
+
+/*icon */
+.icon{
+   display: inline-block;
+   vertical-align:middle;
+   width:24px;
+   height: 24px;
+  background-repeat:no-repeat;
+  background-position: center center;
+  &.sm{
+    
+  }
+  &.large{
+    width: 36px;
+    height:36px;
+  }
+  &.username-icon{
+    background-image: url(/images/a48.png);
+  }
+  &.password-icon{
+    background-image: url(/images/a49.png);
+  }
+  &.my-order-icon{
+    background-image: url(/images/a4.png);
+  }
+  &.order-search-icon{
+    background-image: url(/images/a14.png);
+  }
+  &.review-icon{
+    background-image: url(/images/a6.png);
+  }
+  &.arrow-right{
+    width: 80px;
+    height: 30px;
+    background-image: url(/images/a10.png);
+  }
+}
+.active{
+  .icon{
+    &.my-order-icon{
+      background-image: url(/images/a15.png);
+    }
+    &.order-search-icon{
+      background-image: url(/images/a5.png);
+    }
+    &.review-icon{
+      background-image: url(/images/a5-1.png);
+    }
+  }
+}
