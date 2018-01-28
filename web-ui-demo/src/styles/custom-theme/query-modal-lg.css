@@ -1,0 +1,54 @@
+.query-modal-lg  {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.query-modal-lg .query-params {
+  flex: 1;
+}
+
+.query-modal-lg .query-btns {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  /*width: 200px;*/
+  align-items: flex-end;
+}
+.query-modal-lg .query-btns> .el-form-item:last-of-type {
+  margin-bottom: 0 !important;
+}
+.query-modal-lg .query-btns> .el-form-item .el-button {
+  margin: 0;
+  width: 90px;
+}
+
+
+
+
+.query-modal-lg .query-params .el-form-item:nth-last-of-type(2) .el-form-item__content,
+.query-modal-lg .query-params .el-form-item:nth-last-of-type(1) .el-form-item__content {
+  /*border: 10px solid red;*/
+  width: auto;
+}
+.query-modal-lg .query-params .el-form-item__content {
+  width: 226px;
+}
+.query-modal-lg .el-input {
+  width: 226px;
+}
+.query-modal-lg .el-select {
+  width: 226px;
+}
+.query-modal-lg .el-date-editor input {
+  padding: 0;
+}
+
+.query-modal-lg .combine-input .el-input {
+  width: 102px;
+}
+.query-modal-lg .combine-input .el-input .el-input__icon {
+  display: none;
+}
+.query-modal-lg .combine-input .el-input input {
+  padding: 3px 7px;
+}

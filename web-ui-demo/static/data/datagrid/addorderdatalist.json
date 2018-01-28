@@ -1,0 +1,122 @@
+{
+  "data": {
+    "orderUserList": [
+      {
+        "text": "test_username",
+        "value": "1"
+      }
+    ],
+    "shipCompanyList": [
+      {
+        "text": "测试船公司(CSCGS)",
+        "value": "1"
+      }
+    ],
+    "harborList": [
+      {
+        "text": "广州港口(GZGK)",
+        "value": "1"
+      },
+      {
+        "text": "珠海港口(ZHGK)",
+        "value": "2"
+      }
+    ],
+    "allDockList": [],
+    "profitList": [
+      {
+        "text": "无",
+        "value": "0"
+      },
+      {
+        "text": "A",
+        "value": "1"
+      },
+      {
+        "text": "B",
+        "value": "2"
+      },
+      {
+        "text": "C",
+        "value": "3"
+      }
+    ],
+    "insuranceList": [
+      {
+        "text": "无",
+        "value": "0"
+      },
+      {
+        "text": "基本险",
+        "value": "1"
+      },
+      {
+        "text": "综合险",
+        "value": "2"
+      }
+    ],
+    "vehicleList": [
+      {
+        "text": "无",
+        "value": "0"
+      },
+      {
+        "text": "双拖单桥",
+        "value": "2"
+      },
+      {
+        "text": "双拖双桥",
+        "value": "1"
+      },
+      {
+        "text": "短拖自卸",
+        "value": "4"
+      },
+      {
+        "text": "短拖非自卸",
+        "value": "5"
+      },
+      {
+        "text": "长拖大小柜",
+        "value": "3"
+      },
+      {
+        "text": "长拖车",
+        "value": "123"
+      },
+      {
+        "text": "短拖车",
+        "value": "45"
+      }
+    ],
+    "positionList": [
+      {
+        "text": "无",
+        "value": "0"
+      },
+      {
+        "text": "前位",
+        "value": "1"
+      },
+      {
+        "text": "中位",
+        "value": "2"
+      },
+      {
+        "text": "后位",
+        "value": "3"
+      }
+    ],
+    "conTypeList": [
+      "20GP",
+      "20HQ",
+      "40GP",
+      "40HQ",
+      "2*20GP",
+      "2*20HQ"
+    ]
+  },
+  "code": "1",
+  "message": "",
+  "success": true
+}

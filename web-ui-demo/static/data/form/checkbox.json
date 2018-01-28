@@ -1,0 +1,19 @@
+{
+	"code":"200",
+	"message":"success",
+	"data":{
+		"data":[
+			{
+				"value":"100",
+				"text":"司机"
+			},
+			{
+				"value":"200",
+				"text":"学生"
+			},{
+				"value":"300",
+				"text":"老师"
+			}
+		]
+	}
+}

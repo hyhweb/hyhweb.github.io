@@ -1,0 +1,41 @@
+.query-modal {
+	display: flex;
+	flex-flow: row nowrap;
+}
+.query-modal .el-form-item {
+	margin: 5px;
+	margin-right: 10px;
+}
+
+.query-modal .query-params {
+	flex: 1;
+}
+.query-modal .query-params> label {
+	display: inline-block;
+}
+.query-modal .query-params> .el-form-item> label {
+	width: 110px;
+}
+.query-modal .query-params> .el-form-item> div {
+	width: 150px;
+	height: 36px;
+}
+.query-modal .query-params .el-date-editor.el-input {
+	width: 150px;
+}
+
+.query-modal .query-btns {
+	display: flex;
+	/*width: 200px;*/
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: flex-end;
+}
+.query-modal .query-btns> .el-form-item:last-of-type {
+	margin-bottom: 0;
+}
+.query-modal .query-btns> .el-form-item .el-button {
+	margin: 0;
+	width: 90px;
+}
+

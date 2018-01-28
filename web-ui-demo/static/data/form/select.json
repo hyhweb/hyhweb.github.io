@@ -1,0 +1,19 @@
+{
+	"code":"200",
+	"message":"success",
+	"data":{
+		"data":[
+			{
+				"value":"100",
+				"text":"广州"
+			},
+			{
+				"value":"1001",
+				"text":"上海"
+			},{
+				"value":"1002",
+				"text":"北京"
+			}
+		]
+	}
+}

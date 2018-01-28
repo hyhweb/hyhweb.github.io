@@ -1,0 +1,52 @@
+
+前端代码git路径(dev分支)： http://10.1.0.34/ygb/web-ui.git
+
+vuejs官网：https://cn.vuejs.org/
+
+vuejs的API:https://cn.vuejs.org/v2/api/
+
+vuex 教程：https://vuex.vuejs.org/zh-cn/intro.html
+
+axios 教程：http://coderlt.coding.me/2017/03/21/axios-api-md/
+
+ES6教程：http://www.jianshu.com/p/ebfeb687eb70
+
+Element UI 教程：http://element.eleme.io/#/zh-CN/component/radio
+
+开发工具：sublime text3    http://www.sublimetext.com/
+
+
+前端开发环境搭建:
+
+1,nodejs安装：
+https://nodejs.org/en/download/
+
+2,代码下载：git clone -b dev http://10.1.0.34/ygb/web-ui.git
+
+
+3，设置NPM淘宝代理镜像 
+
+1.npm config set registry https://registry.npm.taobao.org 
+2.npm info underscore 
+
+
+
+3，用DOC命令，进入代码目录，执行如下命令：
+
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8081
+npm run dev
+
+# build for production with minification
+npm run build
+
+4，开发工具sublime text下载： http://www.sublimetext.com/
+
+5,开发工具sublime text 需要安装一些插件，来协助开发。  https://www.imjeff.cn/blog/62/
+
+6,sublime text常用插件：https://www.imjeff.cn/blog/146/
+
+
+
